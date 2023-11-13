@@ -182,4 +182,22 @@ ssh -L 8080:localhost:服务器开放端口号 用户名@服务器ip
 
 **将完成的实验映射到本机**：
 
-有个相应的端口，完成的实验会一直占用端口（感觉不太合理），做相应的映射即可打开web界面。
+有个相应的端口，完成的实验会一直占用端口，做相应的映射即可打开web界面。
+
+**暂停实验(端口不再监听) 建议使用直接停止某次实验**：
+
+```
+nnictl stop
+nnictl stop [experiment_id]
+nnictl stop --port 8080
+```
+**查看所有实验（正在进行中的）**：
+
+```
+nnictl experiment list
+```
+**恢复某次实验**：
+
+```
+nnictl resume [experiment_id] --port 8088
+```
