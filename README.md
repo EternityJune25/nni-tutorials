@@ -178,6 +178,7 @@ nnictl create --config config.yaml --port 1234
 
 ```
 ssh -L 8080:localhost:服务器开放端口号 用户名@服务器ip
+ssh -p 24144 -L 8081:localhost:1234 root@connect.yza1.seetacloud.com
 ```
 
 **将完成的实验映射到本机**：
