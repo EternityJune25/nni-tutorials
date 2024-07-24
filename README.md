@@ -180,7 +180,11 @@ nnictl create --config config.yaml --port 1234
 ssh -L 8080:localhost:服务器开放端口号 用户名@服务器ip
 ssh -p 24144 -L 8081:localhost:1234 root@connect.yza1.seetacloud.com
 ```
-
+**报告效果**：
+```
+nni.report_intermediate_result(acc)
+nni.report_final_result(ari2)
+```
 **将完成的实验映射到本机**：
 
 有个相应的端口，完成的实验会一直占用端口，做相应的映射即可打开web界面。
