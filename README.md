@@ -180,6 +180,7 @@ nnictl create --config config.yaml --port 1234
 ssh -L 8080:localhost:服务器开放端口号 用户名@服务器ip
 ssh -p 24144 -L 8081:localhost:1234 root@connect.yza1.seetacloud.com
 ssh -p 13072 -L 8888:localhost:8888 wangjuyuan@55e844v521.zicp.fun
+jupyter notebook --notebook-dir='/mnt/sdc1/wjy'
 ```
 **报告效果**：
 ```
